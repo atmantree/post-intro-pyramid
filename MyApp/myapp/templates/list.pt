@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Pyramid App</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+  </head>
+  <body>
+    <h1>You have said..</h1>
+    <ul>
+	  <li tal:repeat="detail_page">
+	    <a href="/data/${detail_page.id}">${detail_page.name}</a>
+	  <li>
+	</ul>
+  </body>
+</html>

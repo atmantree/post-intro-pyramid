@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Pyramid App</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+  </head>
+  <body>
+    <h1>Tell me something...</h1>
+    <form action="${save_form}" method="post">
+       <input type="text" name="title"></input><br />
+       <textarea name="data"></textarea><br />
+       <input type="submit" name="form.submitted" value="Send">
+    </form>
+  </body>
+</html>

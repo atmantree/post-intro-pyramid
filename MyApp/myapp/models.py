@@ -18,11 +18,11 @@ Base = declarative_base()
 
 
 class MyModel(Base):
-    __tablename__ = 'models'
+    __tablename__ = 'webformdata'
     id = Column(Integer, primary_key=True)
     name = Column(Text, unique=True)
-    value = Column(Integer)
+    data = Column(Text)
 
-    def __init__(self, name, value):
+    def __init__(self, name, data):
         self.name = name
-        self.value = value
+        self.data = data
