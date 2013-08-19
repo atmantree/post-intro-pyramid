@@ -2,6 +2,7 @@ from sqlalchemy import (
     Column,
     Integer,
     Text,
+    Sequence,
     )
 
 from sqlalchemy.ext.declarative import declarative_base
@@ -17,12 +18,12 @@ DBSession = scoped_session(sessionmaker(extension=ZopeTransactionExtension()))
 Base = declarative_base()
 
 
-class MyModel(Base):
+class WebFormData(Base):
     __tablename__ = 'webformdata'
-    id = Column(Integer, primary_key=True)
-    name = Column(Text, unique=True)
-    data = Column(Text)
+    id = Column(Integer, Sequence('webformdata_seq'), primary_key=True)
+    title = Column(Text, unique=True)
+    comment_text = Column(Text)
 
-    def __init__(self, name, data):
-        self.name = name
-        self.data = data
+    def __init__(self, title, comment_text):
+        self.title = title
+        self.comment_text = comment_text

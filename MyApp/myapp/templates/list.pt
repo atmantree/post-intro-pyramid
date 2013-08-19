@@ -7,9 +7,10 @@
   <body>
     <h1>You have said..</h1>
     <ul>
-	  <li tal:repeat="detail_page">
-	    <a href="/data/${detail_page.id}">${detail_page.name}</a>
-	  <li>
+	  <tal:block repeat="item data">
+	  <li><a href="/data/${item.id}">${item.title}</a></li>
+	  </tal:block>
 	</ul>
+	<a href="/">home</a>
   </body>
 </html>

@@ -8,8 +8,10 @@
     <h1>Tell me something...</h1>
     <form action="${save_form}" method="post">
        <input type="text" name="title"></input><br />
-       <textarea name="data"></textarea><br />
+       <textarea name="comment_text"></textarea><br />
        <input type="submit" name="form.submitted" value="Send">
     </form>
+	<br />
+	<a href="${save_form}">other comments..</a>
   </body>
 </html>
