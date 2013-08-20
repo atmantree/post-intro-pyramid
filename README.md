@@ -1,7 +1,7 @@
 Post Breve Introducción a Pyramid
 =================================
 
-Código fuente que acompaña la publicación http://atmantree.com/go/
+Código fuente que acompaña la publicación http://atmantree.com/go/2013/08/breve-introduccion-a-pyramid/
 
 holapyramid.py
 --------------
